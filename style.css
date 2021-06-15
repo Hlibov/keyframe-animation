@@ -1,0 +1,182 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: flashing-texas3 5s infinite; /* Safari 4+ */
+  -moz-animation:    flashing-texas3 5s infinite; /* Fx 5+ */
+  -o-animation:      flashing-texas3 5s infinite; /* Opera 12+ */
+  animation:         flashing-texas3 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+.main-holder {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 40px solid #fff;
+  -webkit-animation: flashing-texas2 5s infinite; /* Safari 4+ */
+  -moz-animation:    flashing-texas2 5s infinite; /* Fx 5+ */
+  -o-animation:      flashing-texas2 5s infinite; /* Opera 12+ */
+  animation:         flashing-texas2 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+.main-holder::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #4F6F18;
+  opacity: 1;
+  -webkit-animation: flashing-texas1 5s infinite; /* Safari 4+ */
+  -moz-animation:    flashing-texas1 5s infinite; /* Fx 5+ */
+  -o-animation:      flashing-texas1 5s infinite; /* Opera 12+ */
+  animation:         flashing-texas1 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes flashing-texa1 {
+  0%   { opacity: 1; }
+  14%  { opacity: 1; }
+  20%  { opacity: 0; }
+  94%  { opacity: 0; }
+  95%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes flashing-texas1 {
+  0%   { opacity: 1; }
+  14%  { opacity: 1; }
+  20%  { opacity: 0; }
+  94%  { opacity: 0; }
+  95%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+@-o-keyframes flashing-texas1 {
+  0%   { opacity: 1; }
+  14%  { opacity: 1; }
+  20%  { opacity: 0; }
+  94%  { opacity: 0; }
+  95%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes flashing-texas1 {
+  0%   { opacity: 1; }
+  14%  { opacity: 1; }
+  20%  { opacity: 0; }
+  94%  { opacity: 0; }
+  95%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+
+@-webkit-keyframes flashing-texa2 {
+  0%   { background-color: transparent; }
+  14%  { background-color: transparent; }
+  20%  { background-color: #4F6F18; }
+  34%  { background-color: #4F6F18; border-color: #fff; }
+  40%  { background-color: transparent; border-color: #4F6F18; }
+  54%  { border-color: #4F6F18; border-width: 40px; }
+  60%  { border-color: #fff; border-width: 0px; }
+  74%  { border-color: #fff; border-width: 0px; }
+  80%  { border-color: #4F6F18; border-width: 40px; }
+  85%  { background-color: transparent; border-color: #4F6F18; }
+  87%  { background-color: #4F6F18; border-color: #fff; }
+  92%  { background-color: #4F6F18; }
+  94%  { background-color: transparent; }
+  100% { background-color: transparent; }
+}
+@-moz-keyframes flashing-texas2 {
+  0%   { background-color: transparent; }
+  14%  { background-color: transparent; }
+  20%  { background-color: #4F6F18; }
+  34%  { background-color: #4F6F18; border-color: #fff; }
+  40%  { background-color: transparent; border-color: #4F6F18; }
+  54%  { border-color: #4F6F18; border-width: 40px; }
+  60%  { border-color: #fff; border-width: 0px; }
+  74%  { border-color: #fff; border-width: 0px; }
+  80%  { border-color: #4F6F18; border-width: 40px; }
+  85%  { background-color: transparent; border-color: #4F6F18; }
+  87%  { background-color: #4F6F18; border-color: #fff; }
+  92%  { background-color: #4F6F18; }
+  94%  { background-color: transparent; }
+  100% { background-color: transparent; }
+}
+@-o-keyframes flashing-texas2 {
+  0%   { background-color: transparent; }
+  14%  { background-color: transparent; }
+  20%  { background-color: #4F6F18; }
+  34%  { background-color: #4F6F18; border-color: #fff; }
+  40%  { background-color: transparent; border-color: #4F6F18; }
+  54%  { border-color: #4F6F18; border-width: 40px; }
+  60%  { border-color: #fff; border-width: 0px; }
+  74%  { border-color: #fff; border-width: 0px; }
+  80%  { border-color: #4F6F18; border-width: 40px; }
+  85%  { background-color: transparent; border-color: #4F6F18; }
+  87%  { background-color: #4F6F18; border-color: #fff; }
+  92%  { background-color: #4F6F18; }
+  94%  { background-color: transparent; }
+  100% { background-color: transparent; }
+}
+@keyframes flashing-texas2 {
+  0%   { background-color: transparent; }
+  14%  { background-color: transparent; }
+  20%  { background-color: #4F6F18; }
+  34%  { background-color: #4F6F18; border-color: #fff; }
+  40%  { background-color: transparent; border-color: #4F6F18; }
+  54%  { border-color: #4F6F18; border-width: 40px; }
+  60%  { border-color: #fff; border-width: 0px; }
+  74%  { border-color: #fff; border-width: 0px; }
+  80%  { border-color: #4F6F18; border-width: 40px; }
+  85%  { background-color: transparent; border-color: #4F6F18; }
+  87%  { background-color: #4F6F18; border-color: #fff; }
+  92%  { background-color: #4F6F18; }
+  94%  { background-color: transparent; }
+  100% { background-color: transparent; }
+}
+
+
+@-webkit-keyframes flashing-texa3 {
+  0%   { background-image: none; }
+  54%  { background-image: none; }
+  60%  { background-image: url(https://files.fm/thumb.php?i=6p45uws8z); }
+  74%  { background-image: url(https://files.fm/thumb.php?i=6p45uws8z); }
+  80%  { background-image: none; }
+}
+@-moz-keyframes flashing-texas3 {
+  0%   { background-image: none; }
+  54%  { background-image: none; }
+  60%  { background-image: url(https://files.fm/thumb.php?i=6p45uws8z); }
+  74%  { background-image: url(https://files.fm/thumb.php?i=6p45uws8z); }
+  80%  { background-image: none; }
+}
+@-o-keyframes flashing-texas3 {
+  0%   { background-image: none; }
+  54%  { background-image: none; }
+  60%  { background-image: url(https://files.fm/thumb.php?i=6p45uws8z); }
+  74%  { background-image: url(https://files.fm/thumb.php?i=6p45uws8z); }
+  80%  { background-image: none; }
+}
+@keyframes flashing-texas3 {
+  0%   { background-image: none; }
+  54%  { background-image: none; }
+  60%  { background-image: url(https://files.fm/thumb.php?i=6p45uws8z); }
+  74%  { background-image: url(https://files.fm/thumb.php?i=6p45uws8z); }
+  80%  { background-image: none; }
+}
